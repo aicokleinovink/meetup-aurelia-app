@@ -25,3 +25,6 @@ node_modules
 
 # Compiled files
 scripts
+
+# Steps folder (for demo purposes, will be in other repo)
+steps
