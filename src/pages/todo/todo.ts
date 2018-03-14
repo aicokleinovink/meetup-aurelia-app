@@ -15,7 +15,10 @@ export class TodoPage {
   public attached(): void {
     this.todoService.getTodos()
       .then((todos: Todo[]) => this.todos = todos)
-      .catch((error: Error) => this.error = error);
+      .catch((error: Error) => {
+        this.error = error;
+        console.error(error);
+      });
   }
 
   public saveTodo(todo: Todo): void {
