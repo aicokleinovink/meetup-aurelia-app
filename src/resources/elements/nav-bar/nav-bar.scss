@@ -1,0 +1,23 @@
+.nav-bar {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  border-bottom: 1px solid #ccc;
+  padding: 15px 0;
+  background-color: #fff;
+  z-index: 100;
+
+  .nav-bar__menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+      display: inline-flex;
+    }
+
+    li + li {
+      margin-left: 30px;
+    }
+  }
+}

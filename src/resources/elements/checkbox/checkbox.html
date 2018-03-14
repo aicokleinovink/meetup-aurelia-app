@@ -1,0 +1,9 @@
+<template>
+  <require from="./checkbox.scss"></require>
+
+  <div class="checkbox">
+    <input type="checkbox" checked.bind="checked"/>
+    <label click.delegate="check()" class="check-box"></label>
+  </div>
+
+</template>

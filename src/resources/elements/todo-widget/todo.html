@@ -1,0 +1,11 @@
+<template>
+
+  <div class="todo ${todo.done ? 'todo--done' : ''}">
+    <span>${todo.text}</span>
+    <checkbox
+      checked.bind="todo.done"
+      changed.call="todoItemChanged(todo, $event)">
+    </checkbox>
+  </div>
+
+</template>

@@ -1,0 +1,28 @@
+<template>
+
+  <div class="new-todo">
+    <form submit.delegate="submitTodo()" autocomplete="off">
+
+      <div class="row">
+        <div class="col-md-8">
+          <div class="form-group">
+            <input type="text"
+                   class="form-control"
+                   placeholder="What should be done..."
+                   value.bind="newTodo.text"/>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <button type="submit"
+                  class="btn btn-primary btn-block"
+                  disabled.bind="!todoItemIsValid">
+            Add todo
+          </button>
+        </div>
+      </div>
+
+    </form>
+  </div>
+
+</template>

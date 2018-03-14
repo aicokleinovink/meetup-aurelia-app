@@ -1,0 +1,20 @@
+<template>
+
+  <div class="row justify-content-center">
+    <div class="col-xs-12 col-sm-12 col-lg-10">
+
+      <chart labels.bind="['January', 'February', 'March', 'April', 'May', 'June', 'July']">
+        <chart-data data.bind="[65, 59, 80, 81, 56, 55, 40]"></chart-data>
+        <chart-data data.bind="[28, 48, 40, 19, 86, 27, 90]"
+                    background-color="rgba(90,175,255,0.3)"
+                    border-color="rgba(90,175,255,0.7)"
+                    point-background-color="rgba(90,175,255,1)"
+                    point-border-color="#fff"
+                    point-hover-background-color="#fff"
+                    point-hover-border-color="#fff"></chart-data>
+      </chart>
+
+    </div>
+  </div>
+
+</template>

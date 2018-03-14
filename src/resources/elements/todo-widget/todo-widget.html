@@ -1,0 +1,11 @@
+<template>
+  <require from="./todo-widget.scss"></require>
+
+  <div class="todo-widget">
+
+    <compose view="./new-todo-form.html"></compose>
+    <compose view="./todo.html" repeat.for="todo of todos"></compose>
+
+  </div>
+
+</template>

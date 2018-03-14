@@ -1,0 +1,20 @@
+<template>
+  <require from="./nav-bar.scss"></require>
+
+  <div class="nav-bar">
+    <div class="container-fluid">
+
+      <ul class="nav-bar__menu">
+        <li repeat.for="item of router.navigation">
+
+          <a href="javascript:void(0)" click.delegate="itemClick(item)">
+            ${item.title}
+          </a>
+
+        </li>
+      </ul>
+
+    </div>
+  </div>
+
+</template>

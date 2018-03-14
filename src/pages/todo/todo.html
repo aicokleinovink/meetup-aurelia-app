@@ -1,0 +1,19 @@
+<template>
+  <require from="resources/elements/todo-widget/todo-widget"></require>
+
+  <div class="row justify-content-center">
+    <div class="col-xs-12 col-sm-8 col-lg-6">
+
+      <h4 if.bind="error">Whoops, something went wrong!</h4>
+
+      <todo-widget
+        else
+        todos.bind="todos"
+        todo-added.call="saveTodo($event)"
+        todo-updated.call="updateTodo($event)">
+      </todo-widget>
+
+    </div>
+  </div>
+
+</template>
